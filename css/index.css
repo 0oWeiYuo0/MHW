@@ -50,6 +50,7 @@ header {
 }
 
 * {
+    font-family: 'Noto Sans TC', sans-serif;
     text-shadow: none !important;
 }
 
@@ -73,16 +74,38 @@ header {
 
 .accordion li {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.accordion li img {
-    width: 100%;
+.accordion li .accordion-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .cnvideo {
     max-width: 100%;
 }
 
+.accordion > li img {
+    width: 80vw;
+    height: 50vw;
+}
+
+
+/* 版面小於576px */
+@media(max-width:576px) {
+    .accordion > li img {
+        width: 100vw;
+        height: 70vw;
+    }
+}
+
+/* 標題效果 */
 @keyframes titleeffect {
     0% {
         opacity: 0;
