@@ -46,10 +46,12 @@ header {
 
 /* Accordion */
 .accordion-panel {
+    width: 100%;
     display: none;
 }
 
 .accordion {
+    width: 100%;
     padding-inline-start: 0px;
     list-style: none;
     display: flex;
@@ -82,11 +84,14 @@ header {
     height: 50vw;
 }
 
+.content-list {
+    width: 100%;
+}
 
 /* 版面小於576px */
 @media(max-width:576px) {
     .accordion > li img {
-        width: 100vw;
+        width: 90vw;
         height: 70vw;
     }
 }
